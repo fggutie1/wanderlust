@@ -111,3 +111,7 @@ height:auto;
   #menu-toggle input:checked ~ ul {
 	left: 0;
   }
+
+  h1 {
+	color:red;
+  }
