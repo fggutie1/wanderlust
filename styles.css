@@ -80,7 +80,7 @@ h4{
 	width:1px;
 	height:1px;
 	overflow:hidden;
-	}
+}
 
 #skip
 {
@@ -147,24 +147,15 @@ header {
 }
 
 #menu-toggle label {
+	background: var(--yellow);
+	text-align: center;
+	width: 200px;
+	height: 50px;
 	margin: auto;
 	display: block;
 	position: relative;
 	font-size: 1rem;
 	font-weight: 600;
-}
-
-#menu-toggle label span {
-	display: none;
-}
-
-/*
-* Hamburger
-*/
-#menu-toggle label div {
-	display: block;
-	background: var(--yellow);
-	border-radius: 3px;  
 	z-index: 1;  
 	-webkit-transform-origin: 4px 0px;  
 	-ms-transform-origin: 4px 0px;  
@@ -174,22 +165,11 @@ header {
 	transition: all 0.3s ease;
 }
 
-#menu-toggle label div:first-child {
-	-webkit-transform-origin: 0% 100%;
-	-ms-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
-}
-
-#menu-toggle label div:nth-child(2) {
-	-webkit-transform-origin: 0% 0%;
-	-ms-transform-origin: 0% 0%;
-	transform-origin: 0% 0%;
-}
 
 /* 
 * Change the color of the hamburger when toggled
 */
-#menu-toggle input:checked + label div {
+#menu-toggle input:checked + label{
 	color: white;
 	background-color: #000;
 }
@@ -251,7 +231,7 @@ header img{
 
 #img-grid {
 	display: grid;
-	grid-template-rows: 3fr 3fr 3fr);
+	grid-template-rows: 3fr 3fr 3fr;
 	gap: 1em;
 	overflow: hidden;
 }
